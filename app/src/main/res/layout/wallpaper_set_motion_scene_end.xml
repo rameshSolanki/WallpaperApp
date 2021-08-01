@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fridayapp.wallpaperapp.activities.WallpaperDetailActivity">
+
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/content_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/content_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHomeScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Home screen"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_outline_home_24"
+                app:iconGravity="textStart"
+                app:iconPadding="5dp"
+                app:iconSize="20dp"
+                app:iconTint="@color/iconColor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLockScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Lock screen"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_outline_lock_24"
+                app:iconGravity="textStart"
+                app:iconPadding="5dp"
+                app:iconSize="20dp"
+                app:iconTint="@color/iconColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_layout1"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Download"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_outline_save_alt_24"
+                app:iconGravity="textStart"
+                app:iconPadding="5dp"
+                app:iconSize="20dp"
+                app:iconTint="@color/iconColor" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_layout_bg"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/header_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/previous"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_round_navigate_before_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="30dp"
+            app:iconTint="@color/iconColor" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_round_navigate_next_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="30dp"
+            app:iconTint="@color/iconColor" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

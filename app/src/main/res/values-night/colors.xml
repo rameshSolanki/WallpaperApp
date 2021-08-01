@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#43A047</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#43A047</color>
+    <color name="bottomSheetColor">#121212</color>
+    <color name="cardColorText">#FFFFFF</color>
+    <color name="colorBackground">#202020</color>
+    <color name="colorCardBackground">#202020</color>
+    <color name="statusBarColor">#02875c</color>
+    <color name="colorText">#121212</color>
+    <color name="iconColor">#121212</color>
+</resources>

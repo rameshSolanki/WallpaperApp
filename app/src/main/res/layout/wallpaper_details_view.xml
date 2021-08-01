@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FullImageViewFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:transitionName="@string/transition"
+    tools:context="com.fridayapp.wallpaperapp.activities.WallpaperDetailActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="TODO"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_baseline_hourglass_empty_24"
+        android:tag="image_tag" />
+
+    <RelativeLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:elevation="4dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/previous"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                app:cornerRadius="20dp"
+                app:icon="@drawable/ic_round_navigate_before_24"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="30dp"
+                app:iconTint="@color/iconColor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHomeScreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Home screen"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_outline_home_24"
+                app:iconGravity="textStart"
+                app:iconPadding="5dp"
+                app:iconSize="20dp"
+                app:iconTint="@color/iconColor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLockScreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Lock screen"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_outline_lock_24"
+                app:iconGravity="textStart"
+                app:iconPadding="5dp"
+                app:iconSize="20dp"
+                app:iconTint="@color/iconColor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/next"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                app:cornerRadius="20dp"
+                app:icon="@drawable/ic_round_navigate_next_24"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="30dp"
+                app:iconTint="@color/iconColor" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
